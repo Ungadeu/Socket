@@ -13,4 +13,4 @@ if __name__ == '__main__':
     ip = input('Enter IP address:')
     port = int(input('Enter port: '))
     message = input('Enter message: ')
-    print(send_tcp_message(('127.0.0.1', 12000), message))
+    print(send_tcp_message((ip, port), message))
